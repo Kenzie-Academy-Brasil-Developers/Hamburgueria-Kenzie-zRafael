@@ -1,0 +1,55 @@
+:root {
+  --color-primary: #27ae60;
+  --color-primary-50: #93d7af;
+  --color-secondary: #eb5757;
+
+  --grey-100: #333333;
+  --grey-50: #828282;
+  --grey-20: #e0e0e0;
+  --grey-0: #f5f5f5;
+
+  --negative: #e60000;
+  --warning: #ffcd07;
+  --sucess: #168821;
+  --information: #155bcb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+@media (min-width: 800px) {
+  main {
+    flex-direction: row;
+    max-width: 1920px;
+    margin: 0 auto;
+    gap: 0rem;
+  }
+}
+
+@media (min-width: 850px) {
+  main {
+    gap: 2rem;
+  }
+}
