@@ -1,0 +1,23 @@
+.productList {
+  display: flex;
+  gap: 15px;
+
+  width: 100%;
+
+  overflow-x: scroll;
+}
+.productList-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .productList {
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 58vw;
+    min-width: 520px;
+    max-width: 928px;
+
+    overflow: hidden;
+  }
+}
